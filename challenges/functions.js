@@ -28,7 +28,10 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: 'nestedfunction notices that its calling a variable but it doesn't see it in its scope. So what it does is
+//               travels up the parent chain until it finds the variable. This is called a closure. Even though when myFunction is
+//               called and nested function starts its block of code, if it finds a variable that wasn't defined in
+//               its own scope it'll search the chain all the way up to global scope.
 
 
 const external = "I'm outside the function";
