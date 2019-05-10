@@ -111,9 +111,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-zooAnimals.forEach(animal => {
-  animalNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}.`)
-});
+zooAnimals.forEach(animal =>  animalNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}.`));
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -147,4 +145,4 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
+//oh already did that ¯\_(ツ)_/¯
